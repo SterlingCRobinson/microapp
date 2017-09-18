@@ -8,7 +8,7 @@
 </div>
 
 	<% @posts.each do |post| %>
-		<div class="poster">
+		<div class="post-it">
 			<h3> <%= post.title %> </h3>
 			<br>
 			<h4><a href="/users/<%= post.user.id %>"> <%= post.user.username %> </a> </h4>
