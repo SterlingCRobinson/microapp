@@ -1,39 +1,28 @@
 <div class="wrapper">    
-    <h1>Edit Account</h1>
+<h1>Edit Account</h1>
 
-    <form action="/users/<%= @user.id %>" method="post">
-      <input type="hidden" name="_method" value="put">
+  <form action="/users/<%= @user.id %>" method="post">
+    <input type="hidden" name="_method" value="put">
 
-      <label><b>Username:</b></label><br>
-      <input
-      type="text"
-      name="user[username]"
-      value="<%= @user.username %>" autofocus>
+    <label><b>Username:</b></label><br>
+      <input type="text" name="user[username]" value="<%= @user.username %>" autofocus>
       <br><br>
 
       <label><b>Password:</b></label><br>
-      <input
-      type="password"
-      name="user[password]"
-      value="<%= @user.password %>">
+      <input type="password" name="user[password]" value="<%= @user.password %>">
       <br><br>
 
       <label><b>Bio:</b></label><br>
-      <textarea
-      type="text"
-      name="user[bio]"
-      value="<%= @user.bio %>"></textarea>
+      <textarea type="text" name="user[bio]" value="<%= @user.bio %>"></textarea>
       <br><br>
 
       <label><b>Email:</b></label><br>
-      <input
-      type="text"
-      name="user[email]"
-      value="<%= @user.email %>">
+      <input type="text" name="user[email]" value="<%= @user.email %>">
       <br><br>
 
       <input type="submit" name="" value="Submit">
-      <a href="/users/<%= @user.id %>/delete"><button>Delete</button></a>
-      <a href="/users/<%= @user.id %>"><button>Cancel</button></a>
-    </form>
+
+		<a href="/users/<%= @user.id %>/delete"><button>Delete</button></a>
+		<a href="/users/<%= @user.id %>"><button>Cancel</button></a>
+  </form>
 </div>
