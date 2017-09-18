@@ -1,20 +1,17 @@
 <div class="wrapper">
-	<h3>Sign in to your account.</h3>
+<h3>Sign in to your account.</h3>
     
-    <form action="/login" method="post">
+  <form action="/login" method="post">
+   <input type="text" name="user[username]" placeholder="Username" required autofocus>
     
-    <input type="text" name="user[username]" placeholder="Username" required autofocus>
+   <input type="password" name= "user[password]" placeholder="Password" required>
     
-    <input type="password" name= "user[password]" placeholder="Password" required>
+   <button type="submit">Sign in</button>
     
-    <button type="submit">Sign in</button>
-    
-    <label>
-      <input type="checkbox" value="remember-me">
-      Remember me
-    </label>
-    
-    <a href="/signup">Create an account </a></span>
-    
-    </form>
+   <label>
+     <input type="checkbox" value="remember-me">
+     Remember me
+   </label>
+   <a href="/signup">Create an account </a></span>
+ </form>
 </div>
