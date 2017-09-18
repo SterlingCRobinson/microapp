@@ -20,7 +20,6 @@
    </ul>
     </nav>
     
-  <div class="container-main">
     <div class="flash-message">
 
       <% if flash[:notice] %>
@@ -35,8 +34,6 @@
         </div>
       <% end %>
     </div>
-
-    <%= yield %>
-  </div>
+		<%= yield %>
   </body>
 </html>

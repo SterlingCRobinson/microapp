@@ -4,6 +4,7 @@
 		<% if current_user %>
 		<% @posts.each do |post| %>
 			<div class="Homeposts">
+				<hr>
 				<h3> <%= post.title %> </h3>
 				<h3><a href="/users/<%= post.user.id %>"> <%= post.user.username %> </a> </h3>
 				<hr>
