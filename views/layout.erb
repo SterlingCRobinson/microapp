@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<title>blogger</title>
+    <link rel="stylesheet" href="/css/main.css">
+  </head>
+  <body>
+  <nav class="navbar">
+  	<ul class="ulist">
+      <li><a href="/">Home</a></li>
+      	<% if current_user %>
+        	<li><a href="/users/<%= current_user.id %>">My Profile</a></li>
+        	<li><a href="/posts/new">New Post</a></li>
+        	<li><a href="/logout">Logout</a></li>
+       <% else %>
+         	<li><a href="/login">Sign in</a></li>
+         	<li><a href="/signup">Sign up</a></li>
+       <% end %>
+      </li>
+   </ul>
+    </nav>
+    
+  <div class="container-main">
+    <div class="flash-message">
+
+      <% if flash[:notice] %>
+        <div class="flash-notice">
+          <%= flash[:notice] %>
+        </div>
+      <% end %>
+
+      <% if flash[:alert] %>
+        <div class="flash-alert">
+          <%= flash[:alert] %>
+        </div>
+      <% end %>
+    </div>
+
+    <%= yield %>
+  </div>
+  </body>
+</html>
