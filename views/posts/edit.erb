@@ -1,0 +1,23 @@
+<div class="wrapper">
+    <h1>Edit Post</h1>
+
+    <form action="/posts/<%= @post.id %>" method="post">
+      <input type="hidden" name="_method" value="put">
+
+      <label><b>Title:</b></label><br>
+      <input
+      type="text"
+      name="post[title]"
+      value="<%= @post.title %>">
+      <br><br>
+
+      <label><b>Content:</b></label><br>
+      <textarea name="post[content]"
+      maxlength="150"
+      value="<%= @post.content %>"></textarea>
+      <br><br>
+
+
+      <input type="submit" value="Submit">
+    </form>
+</div> 
