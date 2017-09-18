@@ -1,0 +1,15 @@
+<div class="wrapper">
+<h1>Preview Post</h1>
+
+	<h3> <%= @post.title %> </h3>
+	<br>
+
+	<h4> User: <a href="/users/<%= @user.id %>"> <%= @user.username %> </a> </h4>
+	<hr>
+	<p> <%= @post.content %> </p>
+	<br>
+
+	<% if current_user %>
+		<a href="/posts/<%= @post.id %>/edit"><button>Edit Post</button></a>
+	<% end %>
+</div>
