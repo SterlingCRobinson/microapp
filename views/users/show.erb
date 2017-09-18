@@ -1,21 +1,21 @@
 <div class="wrapper">
-				<h3>User: <%= @user.username %> </h3>
-				<p> About me: <%= @user.bio %></p>
-				<h3>E-mail: <%= @user.email %> </h3>
-				<% if current_user.id == @user.id %>
-					<a href="/users/<%= @user.id %>/edit"><button>Edit Profile</button></a>
-				<% end %>
-			</div>
+	<h3>User: <%= @user.username %> </h3>
+	<p> About me: <%= @user.bio %></p>
+	<h3>E-mail: <%= @user.email %> </h3>
+		<% if current_user.id == @user.id %>
+			<a href="/users/<%= @user.id %>/edit"><button>Edit Profile</button></a>
+		<% end %>
+</div>
 
-		<% @posts.each do |post| %>
-			<div class="poster">
-			  <h3> <%= post.title %> </h3>
-			  <br>
-				<h4><a href="/users/<%= post.user.id %>"> <%= post.user.username %> </a> </h4>
-			  <hr>
-			  <p><%= post.content%></p>
-			  <% if current_user.id == @user.id %>
-					<a href="/posts/<%= post.id %>/edit"><button>Edit Post</button></a>
-				<% end %>
-			</div>
+	<% @posts.each do |post| %>
+		<div class="poster">
+			<h3> <%= post.title %> </h3>
+			<br>
+			<h4><a href="/users/<%= post.user.id %>"> <%= post.user.username %> </a> </h4>
+			<hr>
+			<p><%= post.content%></p>
+			<% if current_user.id == @user.id %>
+				<a href="/posts/<%= post.id %>/edit"><button>Edit Post</button></a>
 			<% end %>
+		</div>
+	<% end %>
