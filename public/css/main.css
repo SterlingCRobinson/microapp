@@ -1,3 +1,18 @@
+.homepage {
+  height: 100px;
+  width: 80px;
+  position: relative;
+  border-bottom: 2px solid #f51c40;
+  background: #3beadc;
+}
+
+.homepage-posts {
+  border-left: 2px solid #f51c40;
+  position: absolute;
+  top: 50%;
+  bottom: 0;
+}
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -23,17 +38,17 @@ li a:hover {
 }
 
 input[type=text], select {
-    width: 100%;
+    width: 20%;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
-    border: 1px solid #ccc;
+    border:  1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
 }
 
 input[type=submit] {
-    width: 100%;
+    width: 20%;
     background-color: #4CAF50;
     color: white;
     padding: 14px 20px;
