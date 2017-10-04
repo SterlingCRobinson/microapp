@@ -9,6 +9,7 @@ Sinatra Blogging App
   •BACKEND
     -Ruby
     -Sqlite3
+    -ActiveRecord
     
   
   •FRONTEND
