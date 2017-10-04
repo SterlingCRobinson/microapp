@@ -17,11 +17,13 @@ Sinatra Blogging App
     
   ##HOW IT WORKS
   
-### The backend is all "Ruby on Rails" using SQlite3 for the database engine and 
-uses Activerecord for the Database Object Relational Mapping or (ORM).
+### Backend
+	•The Backend is all "Ruby on Rails" using SQlite3 for the database engine 
+	 and uses Activerecord for the Database Object Relational Mapping or (ORM).
  
-### The frontend uses HTML for <ERB> render tags and routing for each page and uses CSS for the basic 
-coloring, fonts and styling. 
+### Frontend 
+	•The frontend uses HTML for <ERB> render tags and routing for each page and  
+	 uses CSS for the basic coloring, fonts and styling. 
 
 
 
