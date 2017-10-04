@@ -7,7 +7,7 @@ Sinatra Blogging App
 ##Technology Used
 
   •BACKEND
-    -Ruby on Rails
+    -Ruby
     -Sqlite3
     
   
