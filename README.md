@@ -1,6 +1,12 @@
 # microapp
 Sinatra Blogging App
 
+# Purpose
+Micro blogging app showing the user functionalities for:
+• How will the user sign-in flow work?
+• How will users create new posts?
+• Who is this platform for?
+
 ##Links
   • Going to add these at a later date.
 
